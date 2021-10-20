@@ -420,6 +420,9 @@
   background-image: url(../img/cocktail.png);
   background-position: bottom right;
   background-repeat: no-repeat;
+  &.sleep {
+    background-image: url(../img/Frangipani.png);
+  }
   .slider-arrows {
     top: 245px;
     opacity: 0.5;
@@ -434,38 +437,17 @@
   &__btn {
     text-align: center;
   }
+  &__btn-shop {
+    text-align: left;
+    padding-top: 64px;
+  }
   &__descr {
     padding: 160px 0 0 132px;
     min-height: 320px;
     background-repeat: no-repeat;
     margin-top: -230px;
     background-position: right center;
-
-    .descr__head {
-      position: relative;
-      padding-right: 78px;
-
-      img {
-        right: 0;
-        top: 15px;
-        position: absolute;
-      }
-      .holder-star {
-        right: 0;
-        position: absolute;
-        top: 15px;
-        li {
-          display: inline-block;
-        }
-        img {
-          position: static;
-          margin-right: -25px;
-        }
-      }
-    }
-    .descr__sleep {
-      padding-right: 200px;
-    }
+    background-size: contain;
   }
   &__info {
     padding: 100px 0 70px;
@@ -513,5 +495,73 @@
     }
   }
 }
-
+/*------------------------------*/
+.summ {
+  display: inline-block;
+}
+.shop {
+  background-image: url(../img/Shop-Image.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  &__slider-inner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 284px;
+  }
+  &__extras {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    flex-direction: column;
+    &-inner {
+      display: flex;
+      justify-content: space-between;
+      min-width: 300px;
+      align-items: flex-end;
+    }
+    &-title {
+      font-weight: 800;
+      font-size: 28px;
+      line-height: 40px;
+      padding-bottom: 25px;
+    }
+    &-name {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 8px;
+      opacity: 0.5;
+      text-align: center;
+      font-weight: 400;
+      padding: 36px 0 16px;
+    }
+    &-price {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 40px;
+      text-align: center;
+    }
+    &-box {
+      padding-right: 60px;
+    }
+  }
+  &__slider-price {
+    sup {
+      font-weight: 800;
+      font-size: 18px;
+      line-height: 40px;
+      position: relative;
+      top: -18px;
+    }
+  }
+  &__slider-content {
+    display: flex;
+    justify-content: center;
+    flex: 4;
+    .surfboard {
+      padding-right: 167px;
+    }
+  }
+}
+.shop__slider {
+}
 @import "media";
