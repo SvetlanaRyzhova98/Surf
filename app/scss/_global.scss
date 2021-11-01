@@ -123,6 +123,11 @@ li {
     span {
       font-weight: 100;
     }
+    img {
+      left: 360px;
+      top: 15px;
+      position: absolute;
+    }
   }
   .descr__head {
     position: relative;
@@ -134,9 +139,9 @@ li {
       position: absolute;
     }
     .holder-star {
-      right: 0;
+      top: 14px;
+      left: 200px;
       position: absolute;
-      top: 15px;
       li {
         display: inline-block;
       }

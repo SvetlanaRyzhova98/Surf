@@ -22,6 +22,31 @@ $(function () {
     nextArrow:
       '<img class="slider-arrows  slider-arrows__right" src="img/arrows-right.svg" alt="">',
     asNavFor: ".slider-map",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 
   $(".slider-map").slick({
@@ -92,5 +117,8 @@ $(function () {
 
   $(".surfboard-box__circle").on("click", function () {
     $(this).toggleClass("active");
+  });
+  $(".menu-btn").on("click", function () {
+    $(".menu").toggleClass("active");
   });
 });
