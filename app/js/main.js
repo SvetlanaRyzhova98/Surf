@@ -122,3 +122,37 @@ $(function () {
     $(".menu").toggleClass("active");
   });
 });
+
+//навигация
+$(".travel-click").on("click", function () {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(".holder").offset().top,
+    },
+    2000
+  );
+});
+$(".surf-click").on("click", function () {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(".surf").offset().top,
+    },
+    2000
+  );
+});
+$(".shop-click").on("click", function () {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(".shop").offset().top,
+    },
+    2000
+  );
+});
+$(".sleep-click").on("click", function () {
+  $([document.documentElement, document.body]).animate(
+    {
+      scrollTop: $(".sleep").offset().top,
+    },
+    2000
+  );
+});
